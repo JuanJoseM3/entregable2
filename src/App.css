@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+}
+
+.App {
+  display: block;
+  margin: 120px auto;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  height: 200px;
+}
+
+.card {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 20px;
+  background-color: rgb(230, 211, 211);
+}
+
+.location {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  padding: 12px;
+  color: #f3f3f3;
+  font-weight: 700;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-info {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(122, 120, 148) 0%, rgb(32, 126, 119) 30%, rgba(4,174,197,1) 65%, rgba(0,212,255,1) 100%);
+  padding-bottom: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.location,  .main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-container img{
+  height: 77%;
+}
+
+.icon-info {
+  text-align: center;
+}
+
+.temp-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.temp {
+  font-size: 80px;
+}
+
+.png {
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.aditional-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.aditional-info li {
+  padding: 10px;
+}
+
+.temp-range {
+  display: flex;
+  padding: 10px;
+}
+
+.temp-range li {
+  display: flex;
+  padding: 10px;
+}
+
+.air-info {
+  text-align: center;
+}
+
+button {
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 6px;
+  background-color: #35b124;
+  color: #ffffff;
+  padding: 6px;
+}
+
+button:hover {
+  width: 33%;
+  padding: 8px;
+  transition: 0.2s;
+  background-color: #47beb3;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  display: block;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
